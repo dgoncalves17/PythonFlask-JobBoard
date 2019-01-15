@@ -2,11 +2,11 @@ import sqlite3
 from flask import Flask, render_template, g
 
 PATH = 'db/jobs.sqlite'
-
+test
 app = Flask (__name__)
 
 def open_connection();
-    connection = getattr(G, '_connection', None)
+    connection = getattr(g, '_connection', None)
     if connection == None:
         connection = g._connection = sqlite3.connect(PATH)
     connection.row_factory = sqlite3.Row
